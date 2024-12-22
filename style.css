@@ -3,18 +3,25 @@
     margin: 0;
     text-align: center;
 }
+
+body{
+    height: 100vh;
+    width: 100%;
+}
 h1{
     background-color: rgb(7, 7, 32);
     color: white;
-    font-size: 275%;
-    line-height: 175%;
+    font-size: 45px;
+    line-height: 70px;
     margin-bottom: 5rem;
+    width: 100vw;
 }
 .images{
     display: flex;
     justify-content: center;
     gap: 3rem;
     margin-bottom: 100px;
+    width: 100vw;
 }
 .choice{
     height: 165px;
@@ -37,14 +44,29 @@ img{
     font-size: larger;
     font-weight: bolder;
     margin-bottom: 10px;
+    width: 100%;
 }
 .msg-container{
     padding: 20px;
     margin: auto;
-    width: 15%;
+    width: 150px;
     background-color: rgb(7, 7, 32);
     border-radius: 0.5rem;
     font-size: larger;
     font-weight: bolder;
     color: white;
+}
+
+@media(max-width: 600px){
+.choice, img{
+    height: 75px;
+    width: 75px;
+}
+.images{
+    gap: 1rem;
+}
+
+h1{
+    font-size: 25px;
+}
 }
